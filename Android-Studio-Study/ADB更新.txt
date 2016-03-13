@@ -1,0 +1,23 @@
+http://stackoverflow.com/questions/15079211/android-4-2-2-device-offline
+
+if you have properly installed adb and you tried all of the remedies mentioned at above the listen to my remedy:
+
+The reason to appearing "device offline" in android 4.2.2 is that android has a security feature in 4.2.2 that create a whitelist of usb ports that can be used as debugging port.
+
+After plugging deivce in usb and entering the command "adb devices" a popup window will be raised in your device and ask you to accept the connection:
+
+popup window to accept RSA fingerprint of your usb
+
+After accepting RSA fingerprint of you usb you can now issue the "adb devices" again and see the device is no longer offline,
+
+If you dont see the popup window, the reason is your adb version is old, your adb version must ne at least 1.0.31 (you can see the version using the command "adb version"). if version is older than 1.0.31 then update your platform-tools package using latest updates from google. You can find the latest version in sdk-repository. find platform-tools*.zip associated with your OS and download from https://dl-ssl.google.com/android/repository/platform-tools*.zip .
+
+for example version 19.0.1 of platform-tools can be downloaded using these links:
+
+For linux: https://dl-ssl.google.com/android/repository/platform-tools_r19.0.1-linux.zip
+
+For windows: https://dl-ssl.google.com/android/repository/platform-tools_r19.0.1-windows.zip
+
+For MacOSx: https://dl-ssl.google.com/android/repository/platform-tools_r19.0.1-macosx.zip
+
+that's it
