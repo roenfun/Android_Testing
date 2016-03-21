@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/aapp" />
+            <option value="$PROJECT_DIR$/activityLife" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
@@ -16,6 +17,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/aapp" />
+            <option value="$PROJECT_DIR$/activityLife" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>

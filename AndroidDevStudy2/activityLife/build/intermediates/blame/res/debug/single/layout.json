@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\BTEST_Study\\VIP_Shop\\Projects\\Android_Test\\AndroidDevStudy2\\activityLife\\build\\intermediates\\res\\merged\\debug\\layout\\stopactivity.xml",
+        "source": "E:\\BTEST_Study\\VIP_Shop\\Projects\\Android_Test\\AndroidDevStudy2\\activityLife\\src\\main\\res\\layout\\stopactivity.xml"
+    },
+    {
+        "merged": "E:\\BTEST_Study\\VIP_Shop\\Projects\\Android_Test\\AndroidDevStudy2\\activityLife\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "E:\\BTEST_Study\\VIP_Shop\\Projects\\Android_Test\\AndroidDevStudy2\\activityLife\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "E:\\BTEST_Study\\VIP_Shop\\Projects\\Android_Test\\AndroidDevStudy2\\activityLife\\build\\intermediates\\res\\merged\\debug\\layout\\pauseactivity.xml",
+        "source": "E:\\BTEST_Study\\VIP_Shop\\Projects\\Android_Test\\AndroidDevStudy2\\activityLife\\src\\main\\res\\layout\\pauseactivity.xml"
+    }
+]
