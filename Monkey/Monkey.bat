@@ -1,3 +1,14 @@
+rem #######CI ÅäÖÃ##########
+rem cd D:\CI\artifact
+rem del testing-*
+rem "D:\testing\GnuWin32\bin\wget" http:download\testing-release.apk
+rem dir
+rem adb install -r testing-release.apk
+rem cd D:\workspace\TestingAT
+rem set JAVA_HOME="D:\Sandbox\Java\jdk1.7.0_45"
+rem mvn -Dtest=test.java test
+rem ########## END #####################
+
 rem error:device offline -> upgrade adb
 rem adb kill-server
 rem adb start-server
