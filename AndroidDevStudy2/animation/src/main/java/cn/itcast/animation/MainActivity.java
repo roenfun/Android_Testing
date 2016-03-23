@@ -10,6 +10,10 @@ import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
+/**
+ *56_activity切换动画与页面切换动画.avi
+ *所在项目：animation
+ */
 public class MainActivity extends Activity {
     private ViewFlipper viewFlipper;
     private float startX;

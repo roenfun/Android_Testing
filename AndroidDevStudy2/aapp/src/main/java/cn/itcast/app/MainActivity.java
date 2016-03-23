@@ -7,6 +7,10 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
+/**
+*21_监听ContentProvider中数据的变化.avi
+*所在项目：db & other & Aapp
+ */
 public class MainActivity extends Activity {
     /** Called when the activity is first created. */
     @Override

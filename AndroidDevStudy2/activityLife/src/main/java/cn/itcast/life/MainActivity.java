@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+/**
+ *36_Activity生命周期.avi
+ *所在项目：ActivityLife
+ */
 public class MainActivity extends Activity {
     private static String TAG = "MainActivity";
     

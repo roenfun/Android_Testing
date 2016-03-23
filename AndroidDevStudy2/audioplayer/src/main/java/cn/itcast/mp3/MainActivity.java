@@ -15,6 +15,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+/**
+ * 43_éŸ³ä¹æ’­æ”¾å™¨.avi
+ *æ‰€åœ¨é¡¹ç›®ï¼šaudioplayer
+ */
 public class MainActivity extends Activity {
     private EditText nameText;
     private String path;
@@ -37,7 +41,7 @@ public class MainActivity extends Activity {
     private final class MyPhoneListener extends PhoneStateListener{
 		public void onCallStateChanged(int state, String incomingNumber) {
 			switch (state) {
-			case TelephonyManager.CALL_STATE_RINGING://À´µç
+			case TelephonyManager.CALL_STATE_RINGING://ï¿½ï¿½ï¿½ï¿½
 				if(mediaPlayer.isPlaying()) {
 					position = mediaPlayer.getCurrentPosition();
 					mediaPlayer.stop();
@@ -95,12 +99,12 @@ public class MainActivity extends Activity {
 			
 		case R.id.pausebutton:
 			if(mediaPlayer.isPlaying()){
-				mediaPlayer.pause();//ÔÝÍ£
+				mediaPlayer.pause();//ï¿½ï¿½Í£
 				pause = true;
 				((Button)v).setText(R.string.continues);
 			}else{
 				if(pause){
-					mediaPlayer.start();//¼ÌÐø²¥·Å
+					mediaPlayer.start();//ï¿½ï¿½ï¿½ï¿½ï¿½
 					pause = false;
 					((Button)v).setText(R.string.pausebutton);
 				}
@@ -108,7 +112,7 @@ public class MainActivity extends Activity {
 			break;
 		case R.id.resetbutton:
 			if(mediaPlayer.isPlaying()){
-				mediaPlayer.seekTo(0);//´Ó¿ªÊ¼Î»ÖÃ²¥·ÅÒôÀÖ
+				mediaPlayer.seekTo(0);//ï¿½Ó¿ï¿½Ê¼Î»ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			}else{
 				if(path!=null){
 					play(0);
@@ -123,9 +127,9 @@ public class MainActivity extends Activity {
 
 	private void play(int position) {
 		try {
-			mediaPlayer.reset();//°Ñ¸÷Ïî²ÎÊý»Ö¸´µ½³õÊ¼×´Ì¬
+			mediaPlayer.reset();//ï¿½Ñ¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼×´Ì¬
 			mediaPlayer.setDataSource(path);
-			mediaPlayer.prepare();//½øÐÐ»º³å
+			mediaPlayer.prepare();//ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½
 			mediaPlayer.setOnPreparedListener(new PrepareListener(position));
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -139,7 +143,7 @@ public class MainActivity extends Activity {
 		}
 
 		public void onPrepared(MediaPlayer mp) {
-			mediaPlayer.start();//¿ªÊ¼²¥·Å
+			mediaPlayer.start();//ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
 			if(position>0) mediaPlayer.seekTo(position);
 		}
 	}
