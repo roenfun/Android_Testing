@@ -1,0 +1,9 @@
+cd G:\jenkins\artifact
+del vipshop-*
+"G:\Sandbox\GnuWin32\bin\wget" http://app.vipstatic.com/update/shop_android/ace4e05a2d257441da7a23e2a59f84b3/shop_android_ace4e05a2d257441da7a23e2a59f84b3_5.13.4.apk
+dir
+adb install -r shop_android_ace4e05a2d257441da7a23e2a59f84b3_5.13.4.apk
+cd G:\workspace\AndroidAT
+
+set JAVA_HOME="G:\Sandbox\Java\jdk1.7.0_45"
+rem mvn -Dtest=MonkeyTest.java test
