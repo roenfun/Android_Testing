@@ -13,10 +13,12 @@ import static junit.framework.Assert.assertEquals;
  * Test case for {@link UsefulUtils}.
  * <p/>
  * Created by mgouline on 24/05/15.
+ * https://github.com/mgouline/android-samples/tree/master/jacoco
  */
 @Config(sdk = Build.VERSION_CODES.KITKAT)
 public class UsefulUtilsTest {
 
+    //https://github.com/mgouline/android-samples/tree/master/jacoco
     @Test
     public void testSum_standard() {
         assertEquals(6, UsefulUtils.sum(1, 2, 3));
