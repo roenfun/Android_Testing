@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+//深入了解各种布局layout
 public class MainActivity extends Activity {
     private EditText numberText;
     private EditText contentText;
