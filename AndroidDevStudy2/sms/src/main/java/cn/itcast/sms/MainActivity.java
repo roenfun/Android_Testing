@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.main); //在 Activity.onCreate() 回调实现中从您的应用代码加载布局资源
         
         numberText = (EditText) this.findViewById(R.id.number);
         contentText = (EditText) this.findViewById(R.id.content);

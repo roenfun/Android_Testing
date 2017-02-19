@@ -45,4 +45,29 @@
     android:text="@string/button"
     android:id="@+id/button"
     />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/edit_text"
+		android:id="@+id/text_viewTest"
+		/>
+
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="默认提示信息"
+		android:inputType="textMultiLine"
+		android:textStyle="normal"
+		android:textSize="12sp"
+		android:layout_margin="1dp"
+		android:textAlignment="center"
+		android:id="@+id/edit_viewTest"/>
+	<!--android:layout_gravity="center_vertical"-->
+
+	<RadioButton
+		android:text="RadioButton"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/radioButton" />
 </LinearLayout>

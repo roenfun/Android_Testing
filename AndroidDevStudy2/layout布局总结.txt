@@ -1,0 +1,5 @@
+Android 框架还提供了许多其他 ID 资源,引用 Android 资源 ID 时，不需要加号，但必须添加 android 软件包命名空间，如下所示：
+android:id="@android:id/empty"
+
+引用当前布局文件的其他空间则用：
+android:layout_toRightOf="@id/numberlabel"
