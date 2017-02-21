@@ -1,4 +1,4 @@
-include ':app', ':jacoco'
+include ':app', ':jacoco', ':mvpDemo'
 include ':aapp'
 include ':activityLife'
 include ':animation'
