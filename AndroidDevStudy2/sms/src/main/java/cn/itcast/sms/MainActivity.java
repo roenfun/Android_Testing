@@ -3,6 +3,7 @@ package cn.itcast.sms;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.view.View;
@@ -37,7 +38,13 @@ public class MainActivity extends Activity {
 				manager.sendTextMessage(number, null, text, null, null);
 			}
 			Toast.makeText(MainActivity.this, R.string.success, Toast.LENGTH_LONG).show();
+
+            //发送广播，自己写的
+            Intent intent = new Intent("android.intent.action.MY_BROADCAST");
+            intent.putExtra("msg", "hello receiver.");
+            sendBroadcast(intent);
 		}
     	
     }
+
 }
