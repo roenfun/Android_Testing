@@ -11,6 +11,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+/**
+ * 例子地址:
+ * http://www.cnblogs.com/allin/archive/2010/05/11/1732200.html
+ */
 public class MainActivity extends Activity {
 
 	private Button myListViewBtn;
