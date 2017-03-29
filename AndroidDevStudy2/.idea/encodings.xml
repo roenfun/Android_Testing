@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/datapageload/src/main/java/cn/itcast/pageload/MainActivity.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/db/src/main/java/cn/itcast/adapter/PersonAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/mvpDemo/注意事项note.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/phonelistener/src/main/java/cn/itcast/phonelistener/BootBroadcastReceiver.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/phonelistener/src/main/java/cn/itcast/phonelistener/PhoneService.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/phonelistener/src/main/java/cn/itcast/utils/StreamTool.java" charset="GBK" />

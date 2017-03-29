@@ -28,6 +28,7 @@
       <module fileurl="file://$PROJECT_DIR$/jacoco/jacoco.iml" filepath="$PROJECT_DIR$/jacoco/jacoco.iml" />
       <module fileurl="file://$PROJECT_DIR$/junitest/junitest.iml" filepath="$PROJECT_DIR$/junitest/junitest.iml" />
       <module fileurl="file://$PROJECT_DIR$/launchMode/launchMode.iml" filepath="$PROJECT_DIR$/launchMode/launchMode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/listviewadpater/listviewadpater.iml" filepath="$PROJECT_DIR$/listviewadpater/listviewadpater.iml" />
       <module fileurl="file://$PROJECT_DIR$/login/login.iml" filepath="$PROJECT_DIR$/login/login.iml" />
       <module fileurl="file://$PROJECT_DIR$/metadata/metadata.iml" filepath="$PROJECT_DIR$/metadata/metadata.iml" />
       <module fileurl="file://$PROJECT_DIR$/mobileAddressQuery/mobileAddressQuery.iml" filepath="$PROJECT_DIR$/mobileAddressQuery/mobileAddressQuery.iml" />
