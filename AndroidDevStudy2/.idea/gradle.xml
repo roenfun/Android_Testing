@@ -3,24 +3,74 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../android_vip_all/vip-all/gradle/wrapper/gradle-2.14.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/aapp" />
             <option value="$PROJECT_DIR$/activityLife" />
+            <option value="$PROJECT_DIR$/animation" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/audioplayer" />
+            <option value="$PROJECT_DIR$/codeUI" />
+            <option value="$PROJECT_DIR$/contacts" />
+            <option value="$PROJECT_DIR$/dataAsyncLoad" />
+            <option value="$PROJECT_DIR$/datapageload" />
+            <option value="$PROJECT_DIR$/db" />
+            <option value="$PROJECT_DIR$/dragScale" />
+            <option value="$PROJECT_DIR$/drawable" />
+            <option value="$PROJECT_DIR$/file" />
+            <option value="$PROJECT_DIR$/fragmentDemo" />
+            <option value="$PROJECT_DIR$/frameAnimation" />
+            <option value="$PROJECT_DIR$/frameLayout" />
+            <option value="$PROJECT_DIR$/gesture" />
+            <option value="$PROJECT_DIR$/gestureBuilder" />
+            <option value="$PROJECT_DIR$/htmlUI" />
+            <option value="$PROJECT_DIR$/htmlViewer" />
+            <option value="$PROJECT_DIR$/i18n" />
+            <option value="$PROJECT_DIR$/intent" />
+            <option value="$PROJECT_DIR$/jacoco" />
+            <option value="$PROJECT_DIR$/junitest" />
+            <option value="$PROJECT_DIR$/launchMode" />
+            <option value="$PROJECT_DIR$/login" />
+            <option value="$PROJECT_DIR$/metadata" />
+            <option value="$PROJECT_DIR$/mobileAddressQuery" />
+            <option value="$PROJECT_DIR$/mulActivity" />
+            <option value="$PROJECT_DIR$/mulThreadDownloader" />
+            <option value="$PROJECT_DIR$/mvpAndroid" />
+            <option value="$PROJECT_DIR$/mvpDemo" />
+            <option value="$PROJECT_DIR$/netimage" />
+            <option value="$PROJECT_DIR$/news" />
+            <option value="$PROJECT_DIR$/newsmanage" />
+            <option value="$PROJECT_DIR$/notification" />
+            <option value="$PROJECT_DIR$/openSingleInstance" />
+            <option value="$PROJECT_DIR$/other" />
+            <option value="$PROJECT_DIR$/phone" />
+            <option value="$PROJECT_DIR$/phonelistener" />
+            <option value="$PROJECT_DIR$/popupWindow" />
+            <option value="$PROJECT_DIR$/remoteService" />
+            <option value="$PROJECT_DIR$/remoteServiceClient" />
+            <option value="$PROJECT_DIR$/sMSListener" />
+            <option value="$PROJECT_DIR$/screenAdapter" />
+            <option value="$PROJECT_DIR$/sensor" />
+            <option value="$PROJECT_DIR$/sharedPreferences" />
+            <option value="$PROJECT_DIR$/singleInstance" />
+            <option value="$PROJECT_DIR$/sms" />
+            <option value="$PROJECT_DIR$/studentquery" />
+            <option value="$PROJECT_DIR$/style" />
+            <option value="$PROJECT_DIR$/tabhost" />
+            <option value="$PROJECT_DIR$/takepicture" />
+            <option value="$PROJECT_DIR$/tween" />
+            <option value="$PROJECT_DIR$/videoRecorder" />
+            <option value="$PROJECT_DIR$/videoUpload" />
+            <option value="$PROJECT_DIR$/videoplayer" />
+            <option value="$PROJECT_DIR$/widgets" />
+            <option value="$PROJECT_DIR$/xml" />
           </set>
         </option>
-        <option name="myModules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/aapp" />
-            <option value="$PROJECT_DIR$/activityLife" />
-            <option value="$PROJECT_DIR$/app" />
-          </set>
-        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

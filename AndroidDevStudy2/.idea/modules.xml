@@ -5,7 +5,63 @@
       <module fileurl="file://$PROJECT_DIR$/AndroidDevStudy2.iml" filepath="$PROJECT_DIR$/AndroidDevStudy2.iml" />
       <module fileurl="file://$PROJECT_DIR$/aapp/aapp.iml" filepath="$PROJECT_DIR$/aapp/aapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/activityLife/activityLife.iml" filepath="$PROJECT_DIR$/activityLife/activityLife.iml" />
+      <module fileurl="file://$PROJECT_DIR$/animation/animation.iml" filepath="$PROJECT_DIR$/animation/animation.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/audioplayer/audioplayer.iml" filepath="$PROJECT_DIR$/audioplayer/audioplayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codeUI/codeUI.iml" filepath="$PROJECT_DIR$/codeUI/codeUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contacts/contacts.iml" filepath="$PROJECT_DIR$/contacts/contacts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dataAsyncLoad/dataAsyncLoad.iml" filepath="$PROJECT_DIR$/dataAsyncLoad/dataAsyncLoad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datapageload/datapageload.iml" filepath="$PROJECT_DIR$/datapageload/datapageload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/db/db.iml" filepath="$PROJECT_DIR$/db/db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dragScale/dragScale.iml" filepath="$PROJECT_DIR$/dragScale/dragScale.iml" />
+      <module fileurl="file://$PROJECT_DIR$/drawable/drawable.iml" filepath="$PROJECT_DIR$/drawable/drawable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/file/file.iml" filepath="$PROJECT_DIR$/file/file.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fragmentDemo/fragmentDemo.iml" filepath="$PROJECT_DIR$/fragmentDemo/fragmentDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frameAnimation/frameAnimation.iml" filepath="$PROJECT_DIR$/frameAnimation/frameAnimation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frameLayout/frameLayout.iml" filepath="$PROJECT_DIR$/frameLayout/frameLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gesture/gesture.iml" filepath="$PROJECT_DIR$/gesture/gesture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestureBuilder/gestureBuilder.iml" filepath="$PROJECT_DIR$/gestureBuilder/gestureBuilder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/htmlUI/htmlUI.iml" filepath="$PROJECT_DIR$/htmlUI/htmlUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/htmlViewer/htmlViewer.iml" filepath="$PROJECT_DIR$/htmlViewer/htmlViewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/i18n/i18n.iml" filepath="$PROJECT_DIR$/i18n/i18n.iml" />
+      <module fileurl="file://$PROJECT_DIR$/intent/intent.iml" filepath="$PROJECT_DIR$/intent/intent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jacoco/jacoco.iml" filepath="$PROJECT_DIR$/jacoco/jacoco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/junitest/junitest.iml" filepath="$PROJECT_DIR$/junitest/junitest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/launchMode/launchMode.iml" filepath="$PROJECT_DIR$/launchMode/launchMode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/login/login.iml" filepath="$PROJECT_DIR$/login/login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/metadata/metadata.iml" filepath="$PROJECT_DIR$/metadata/metadata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobileAddressQuery/mobileAddressQuery.iml" filepath="$PROJECT_DIR$/mobileAddressQuery/mobileAddressQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mulActivity/mulActivity.iml" filepath="$PROJECT_DIR$/mulActivity/mulActivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mulThreadDownloader/mulThreadDownloader.iml" filepath="$PROJECT_DIR$/mulThreadDownloader/mulThreadDownloader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvpAndroid/mvpAndroid.iml" filepath="$PROJECT_DIR$/mvpAndroid/mvpAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvpDemo/mvpDemo.iml" filepath="$PROJECT_DIR$/mvpDemo/mvpDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netimage/netimage.iml" filepath="$PROJECT_DIR$/netimage/netimage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/news/news.iml" filepath="$PROJECT_DIR$/news/news.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newsmanage/newsmanage.iml" filepath="$PROJECT_DIR$/newsmanage/newsmanage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notification/notification.iml" filepath="$PROJECT_DIR$/notification/notification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/openSingleInstance/openSingleInstance.iml" filepath="$PROJECT_DIR$/openSingleInstance/openSingleInstance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/other/other.iml" filepath="$PROJECT_DIR$/other/other.iml" />
+      <module fileurl="file://$PROJECT_DIR$/phone/phone.iml" filepath="$PROJECT_DIR$/phone/phone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/phonelistener/phonelistener.iml" filepath="$PROJECT_DIR$/phonelistener/phonelistener.iml" />
+      <module fileurl="file://$PROJECT_DIR$/popupWindow/popupWindow.iml" filepath="$PROJECT_DIR$/popupWindow/popupWindow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/remoteService/remoteService.iml" filepath="$PROJECT_DIR$/remoteService/remoteService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/remoteServiceClient/remoteServiceClient.iml" filepath="$PROJECT_DIR$/remoteServiceClient/remoteServiceClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sMSListener/sMSListener.iml" filepath="$PROJECT_DIR$/sMSListener/sMSListener.iml" />
+      <module fileurl="file://$PROJECT_DIR$/screenAdapter/screenAdapter.iml" filepath="$PROJECT_DIR$/screenAdapter/screenAdapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sensor/sensor.iml" filepath="$PROJECT_DIR$/sensor/sensor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharedPreferences/sharedPreferences.iml" filepath="$PROJECT_DIR$/sharedPreferences/sharedPreferences.iml" />
+      <module fileurl="file://$PROJECT_DIR$/singleInstance/singleInstance.iml" filepath="$PROJECT_DIR$/singleInstance/singleInstance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sms/sms.iml" filepath="$PROJECT_DIR$/sms/sms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studentquery/studentquery.iml" filepath="$PROJECT_DIR$/studentquery/studentquery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/style/style.iml" filepath="$PROJECT_DIR$/style/style.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tabhost/tabhost.iml" filepath="$PROJECT_DIR$/tabhost/tabhost.iml" />
+      <module fileurl="file://$PROJECT_DIR$/takepicture/takepicture.iml" filepath="$PROJECT_DIR$/takepicture/takepicture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tween/tween.iml" filepath="$PROJECT_DIR$/tween/tween.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videoRecorder/videoRecorder.iml" filepath="$PROJECT_DIR$/videoRecorder/videoRecorder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videoUpload/videoUpload.iml" filepath="$PROJECT_DIR$/videoUpload/videoUpload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videoplayer/videoplayer.iml" filepath="$PROJECT_DIR$/videoplayer/videoplayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/widgets/widgets.iml" filepath="$PROJECT_DIR$/widgets/widgets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xml/xml.iml" filepath="$PROJECT_DIR$/xml/xml.iml" />
     </modules>
   </component>
 </project>
