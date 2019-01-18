@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
 
 	public void onEventMainThread(FirstEvent event) {
 
-		String msg = "onEventMainThread收到了消息：" + event.getMsg();
+		String msg = "onEventMainThread --> get the message from second activity:" + event.getMsg();
 		Log.d("harvic", msg);
 		tv.setText(msg);
 		Toast.makeText(this, msg, Toast.LENGTH_LONG).show();

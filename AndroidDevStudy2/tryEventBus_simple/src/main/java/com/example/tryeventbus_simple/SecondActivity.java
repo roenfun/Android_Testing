@@ -23,7 +23,7 @@ public class SecondActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				EventBus.getDefault().post(
-						new FirstEvent("FirstEvent btn clicked"));
+						new FirstEvent("'First Event' btn clicked"));
 			}
 		});
 
