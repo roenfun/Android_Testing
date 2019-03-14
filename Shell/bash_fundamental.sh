@@ -1,5 +1,18 @@
 #!/bin/bash
 
+#
+# this script should not be run directly,
+# instead you need to source it from your .bashrc,
+# by adding this line:
+# source 命令是在当前的shell环境下执行脚本 ，不会创建子shell; 
+#source ./chdir.sh 或者 . ./chdir.sh 
+
+demoFun(){
+    echo "切换目录到：$work_dir"
+    cd $work_dir
+}
+demoFun
+
 #`chmod +x /Users/chad/project/git/Android_Testing/Shell/bash_fundamental.sh`  #使脚本具有执行权限
 a=`which python` #等效于: $(which python)
 echo $a
