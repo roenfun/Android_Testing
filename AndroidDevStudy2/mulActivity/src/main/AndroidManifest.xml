@@ -13,6 +13,5 @@
         </activity>
 		<activity android:name=".OtherActivity" android:label="@string/title"/>
     </application>
-    <uses-sdk android:minSdkVersion="8" />
 
-</manifest> 
+</manifest>

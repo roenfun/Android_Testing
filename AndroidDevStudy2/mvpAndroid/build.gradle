@@ -4,7 +4,6 @@ android {
     //compileSdkVersion 24
    // buildToolsVersion '24.0.1'
     compileSdkVersion 21
-    buildToolsVersion "22.0.1"
 
     defaultConfig {
         applicationId 'com.antonioleiva.androidmvp'
@@ -24,7 +23,7 @@ android {
 }
 
 dependencies {
-    testCompile 'junit:junit:4.12'
-    testCompile 'org.mockito:mockito-core:2.0.90-beta'
-    compile 'com.android.support:appcompat-v7:21.0.3'
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.mockito:mockito-core:2.0.90-beta'
+    implementation 'com.android.support:appcompat-v7:21.0.3'
 }

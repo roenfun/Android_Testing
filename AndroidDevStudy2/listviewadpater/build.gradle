@@ -1,8 +1,6 @@
 apply plugin: 'com.android.application'
-
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.0.1"
 
     defaultConfig {
         applicationId "org.lee.android"
@@ -16,4 +14,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+}
+
+dependencies {
 }
