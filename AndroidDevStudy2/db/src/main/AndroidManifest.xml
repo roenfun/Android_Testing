@@ -15,9 +15,8 @@
 
 		<provider android:name=".PersonProvider" android:authorities="cn.itcast.providers.personprovider"/>
     </application>
-    <uses-sdk android:minSdkVersion="8" />
 
-<instrumentation android:name="android.test.InstrumentationTestRunner"
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
   android:targetPackage="cn.itcast.db" android:label="Tests for My App" />
   
 </manifest> 

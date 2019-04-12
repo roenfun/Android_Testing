@@ -14,6 +14,5 @@
 
 		<activity android:name=".OtherActivity" android:label="新窗口"/>
     </application>
-    <uses-sdk android:minSdkVersion="8" />
 
-</manifest> 
+</manifest>
