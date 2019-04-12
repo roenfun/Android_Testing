@@ -28,9 +28,9 @@ public class MyService extends Service {
         //创建一个前台Service
         Notification notification = new Notification(R.drawable.ic_launcher, "有通知到来", System.currentTimeMillis());
         Intent notificationIntent = new Intent(this, MainActivity.class);
-        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
-        notification.setLatestEventInfo(this, "这是通知的标题", "这是通知的内容",
-                pendingIntent);
+//        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
+//        notification.setLatestEventInfo(this, "这是通知的标题", "这是通知的内容",
+//                pendingIntent);
         startForeground(1, notification); //变为前台应用
 
         Log.d(TAG, "onCreate() executed!");
