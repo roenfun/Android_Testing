@@ -5,7 +5,6 @@ apply from: '../jacoco.gradle'
 android {
     compileSdkVersion 21
 //    buildToolsVersion "23.0.1"
-    buildToolsVersion "22.0.1"
 
     defaultConfig {
         applicationId "net.gouline.jacoco"
@@ -13,6 +12,7 @@ android {
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
+        flavorDimensions "versionCode"
     }
     buildTypes {
         debug {
@@ -36,14 +36,12 @@ android {
 
 dependencies {
     // Support
-//    compile 'com.android.support:appcompat-v7:23.2.0'
-    compile 'com.android.support:appcompat-v7:21.0.3'
-
+    //    compile 'com.android.support:appcompat-v7:23.2.0'
+    implementation 'com.android.support:appcompat-v7:21.0.3'
     // Injection
-    compile 'com.jakewharton:butterknife:6.1.0'
-
+    implementation 'com.jakewharton:butterknife:6.1.0'
     // Unit testing
-    testCompile "org.robolectric:robolectric:3.0-rc3"
-    testCompile "junit:junit:4.12"
-    testCompile "org.assertj:assertj-core:1.7.0"
+    testImplementation 'org.robolectric:robolectric:3.0-rc3'
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.assertj:assertj-core:1.7.0'
 }

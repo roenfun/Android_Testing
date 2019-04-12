@@ -1,8 +1,6 @@
 apply plugin: 'com.android.application'
-
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.0.1"
     defaultConfig {
         applicationId "cn.itcast.htmlviewer"
         minSdkVersion 19
@@ -15,4 +13,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+}
+
+dependencies {
 }
