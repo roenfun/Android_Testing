@@ -73,7 +73,7 @@ do
 echo "log---: for循环数组是：$i"
 if [ ${array[i]} -eq 1 ]; then
 	echo "元素为1，跳出循环"
-	sleep 1
+	sleep 1 #停止运行1秒
 	break
 fi	
 done
@@ -138,5 +138,78 @@ done
 # done < $path1 | grep -o "结果约[0-9,]*"
 
 #字符串应用切片
+a=2;b=3
+while read a b; do [ $a -gt $b ] && echo "b>a" || echo "a<b"; done
+
+curl -s https://testing-studio.com/ \
+| grep href | grep -o "http[^\"']*" \
+| while read line;do curl -s -I $line | grep 200 && echo 200 $line || echo ERR $line; done
+
+curl https://testerhome.com | grep -o 'http://[a-zA-Z0-9\.\-]*'
+
+awk  '$9~/500/' nginx.log
+awk  '$9!~/200/' nginx.log #不包含200的
+awk -F " "  '$9!~/200/{print $9}' nginx.log | sort | uniq -c
+awk -F " "  '$9!~/200/{print $7}' nginx.log |sed -E 's/[0-9]{3,}/_d_/g' | sort -r | uniq -c
+awk -F " "  '$9!~/200/{print $7}' nginx.log |sed -E 's/[0-9]*/_d_/g' | sort -r | uniq -c
+
+grep 'http://[a-zA-Z0-9\.\]*' nginx.log | awk -F " " '{print $0}' | uniq -c | sort -c | head -1
+
+#找出访问量最高的页面地址
+#求/topics/nnn接口的平均响应时间（最后一列为响应时间）
+awk '$7~/\/topics\/[0-9].*/' nginx.log | head
+grep -o 'http[s]://[a-zA-Z0-9\.\]*' nginx.log | awk -F " " '{print $0}'|sort -n | uniq -c | sort -n -r | head -1
+grep '\/topics\/n.*' nginx.log | awk '{a=(NF-1);b=+$a;print $a}END{printf "average of response time is: %.3f\n", (b/NR)}'
+
+curl -s https://testing-studio.com -v 
+seq 10 | grep -v '[1-3]'
+seq 10 |awk '/^5$/'
+seq 10 |awk '/[5-9]/'
+seq 20 |awk '/15/,/19/'
+echo '1|2#3.4' | awk -F '#|_|\\.\\|' '{print $1}'
+
+#获取当前界面的所有内容
+adb shell "uiautomator dump --compress  && cat /sdcard/window_dump.xml"
+
+#点击当前页面的坐标
+
+click(){
+local index=1
+[ -n "$2" ] && index=$2
+adb shell input tap \
+$(
+adb shell "uiautomator dump --compressed && cat /sdcard/window_dump.xml" \
+| sed 's#<node#^<node>#g' \
+| awk 'BEGIN{RS="^"}{print $0}' \
+| grep "$1"  \
+| sed  -n "$index"p \
+| awk 'BEGIN{FS=",|\\[|\\]"}{print ($2+$5)/2,($3+$6)/2}' 
+)
+}
+
+for name in 我的 订单  首页 ;do click $name;done
+
+adb shell input tap $(adb shell "uiautomator dump --compress  && cat /sdcard/window_dump.xml" | sed 's/<node/^<node>/g' | awk 'BEGIN{RS="^"}{print $0}' | grep '往内容提供者添加数' | awk 'BEGIN{FS=",|\\[|\\]"}{print ($2+($5-$2)/2),($3+($6-$3)/2)}')
 
 
+#https://testerhome.com/api/v3/topics.json
+#把里面的每个帖子的信息，都拆分为独立的一行
+curl -s https://testerhome.com/api/v3/topics.json |sed 's#{"topics":\[##g' |sed 's#]}##g' \
+| awk 'BEGIN{RS="}},"}{print $0}' |awk '{if($0!="")print $0}' \
+| sed 's/$/}}/g' \
+| awk '{if(NR%2==0){printf $0 "\n\n"}else{printf "%s：",$0}}' \
+| sed 's/,{"id":/{"id":/g'
+
+curl -s https://testerhome.com/api/v3/topics.json \
+| sed -e "s#{\"topics\"\:\[{##" -e "s#}]}##" -e "s#},{#~#g" \
+| awk -v RS="~" '$0!~/\n/{print "{" $0 "}"}'
+
+#查看端口
+netstat -tlnp
+
+#打印所有的连接到shell服务器的学员数，以ip为准
+netstat -tnp | awk '{print $5}' | awk -F: '{print $1}' | sort | uniq -c | sort -nr |wc -l
+#查看有多少个ip连接入来
+netstat -tn | awk '{print $5}' | sort | awk -F: '{print $1}' | sort | uniq -c | sort -rn | wc -l
+
+op -b -d 1 -n 20 -p 19912 | grep --line-buffere | awk '{cpu+=$9;mem+=$10}{print "cpu:" cpu/NR, "mem:" mem/NR }'
