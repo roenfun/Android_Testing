@@ -1,4 +1,4 @@
-include ':app', ':jacoco', ':mvpDemo', ':mvpAndroid', ':eventbuslatest', 'FragementDemo2', 'recyclerview'
+include ':app', ':jacoco', ':mvpDemo', ':mvpAndroid', ':eventbuslatest', 'FragementDemo2', 'recyclerview', ':recyclerview'
 include ':aapp'
 include ':activityLife'
 include ':animation'
