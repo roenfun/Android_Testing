@@ -13,8 +13,7 @@
         </activity>
 <uses-library android:name="android.test.runner" />
     </application>
-    <uses-sdk android:minSdkVersion="8" />
-<instrumentation android:name="android.test.InstrumentationTestRunner"
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
   android:targetPackage="cn.itcast.xml" android:label="Tests for My App" />
 
 </manifest> 
