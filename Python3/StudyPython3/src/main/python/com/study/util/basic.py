@@ -1,8 +1,8 @@
-# @File : basic.py 
+# @File : basic.py
 # @Author : Chad
 # @Time : 2019-04-12
 """
-基础语法使用
+基础语法使用，阅读python简明教程笔记
 """
 # !/usr/local/bin/python3
 # !/Library/Frameworks/Python.framework/Versions/3.7/bin
@@ -33,7 +33,7 @@ pipenv安装目录：Users/chad.long/Library/Python/3.7/bin/pipenv
 """
 # --------------------
 
-if __name__ == '__main__':
+if __name__ == '__main__':  #
     print('程序自身在运行')
 else:
     print('我来自另一模块')
@@ -47,22 +47,44 @@ print('########-------------常量 数据类型-----------------#########')
 a = b = c = 1 + True
 counter, counter2, miles, mie = 100, 12345678901, 1000.04, 52.3E-2  # 整型变量 # 浮点型变量,52.3E-2 = 52.3 *1/10^-2,
 grade = 0
+s = '''this is first line;
+this is the second line!'''
+print("'''换行多行", s)
 print("a = b = c =", a, b, c)
 print("counter=, Long类型 counter2=", counter, counter2)
 print("miles=", miles)
 print("幂运算符mie=", mie)
 
-# 换行连接符号 \，单引号和双引号一样的字符串
+# 换行连接符号 \，单引号和双引号一样的字符串,转义字符
 name = "this " + \
        "is " + \
-       'python3'
+       'python3\'s book'
+# 格式化变量为字符串 format
+print("format 函数: 格式化变量conter2={0},name={1}".format(counter2, name))
+print('{0:.3f}'.format(1.0 / 3))  # 除法
+print('{0:_^11}'.format("hello"))
+print('{name} wrote {book}'.format(name='Ronaldo', book='<A byte of Python>'))
+
+print('########-------------运算符与表达式-----------------#########')
+print(3 ** 4)  # 乘方
+print(-13 // 4)  # 整除
+print(-13.5 % 2.5)  # 取模
+print(2 << 2)  # 左移 2为10，左移得到 1000 = 8
+print(11 >> 1)  # 右移 11为1011，右移得到 101 = 5
+print(5 & 3)  # 以下4个是位运算符
+print(5 | 3)
+print(5 ^ 3)
+print(~5)
+print(not True)
+print(False and True)
+print(False or True)
 
 print('########-------------list列表-----------------#########')
 
-list1 = ['abcd', 786, 2.23, 'runoob', 70.2, 'test', 'hello'];
+list1 = ['abcd', 786, 2.23, 'runoob', 70.2, 'test', 'hello']
 tinyList = [123, 'runoob']  # 列表 array
-list1[0] = "改变数组元素值";
-list1[2:5] = [13, 14, 15];
+list1[0] = "改变数组元素值"
+list1[2:5] = [13, 14, 15]
 list1[2:3] = []  # 将对应的元素值设置为 []
 del list1[1]
 del c  # del语句删除单个或多个对象
@@ -132,6 +154,8 @@ print("list数组是：", list1)
 while listLength > 0:
     listLength = listLength - 1
     print("用while遍历list数组是：", listLength, "is:", list1[listLength - 1])
+else:
+    print("while 循环语句已经结束了，跳出来！！")
 
 it = iter(dict1)
 for x in it:
@@ -189,19 +213,19 @@ class People:
 
 # 单继承示例
 class Student(People):
-    global grade
+    global grade  # 全域变量，全局变量
 
-    def __init__(self, name, age, weight, grade=4):  # grade默认参数
+    def __init__(self, names, age, weight, grades=4):  # grade默认参数,必须写在最后面，不能位于没有默认值的参数前面
         # 调用父类的构造函数
-        People.__init__(self, name, age, weight)
-        self.grade = grade
+        People.__init__(self, names, age, weight)
+        self.grade = grades
 
     # 覆写父类的方法
     def speak(self, *vartuple):  # 函数定义
         print("%s 说: 我 %d 岁了，我在读 %d 年级" % (self.name, self.age, self.grade))
         # print("%s说: 我 %d 岁了，我在读 %d 年级", self.name,self.age,self.grade)
         for var in vartuple:
-            print("遍历不定长参数：", var)
+            print("遍历不定长参数，可变参数...：", var)
         print("不定长参数：", vartuple)
 
 
@@ -217,3 +241,4 @@ print("全局变量grade的值从0变为：", grade)
 
 input("\n\n按下 enter 键后退出。")  # 键盘输入 "\n\n"在结果输出前会输出两个新的空行。一旦用户按下 enter 键时，程序将退出
 stdout.write('\n' + name + '\n-----\n')  # 因为已经导入name成员，所以此处引用时不需要加sys.name
+guess = int(input("请输入一个数字，一定要是数字。。。"))

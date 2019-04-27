@@ -4,10 +4,10 @@ import sys
 sys.path.append('/Users/chad.long/project/git/Android_Testing/Python3/StudyPython3')  # 新加入的
 # print(sys.path)
 
-ANDROID_APP_PATH = 'http://appium.github.io/appium/assets/ApiDemos-debug.apk' if os.getenv(
+ANDROID_APP_PATH = 'http://appiumdemo.github.io/appiumdemo/assets/ApiDemos-debug.apk' if os.getenv(
     'SAUCE_LABS') else os.path.abspath('../apps/ApiDemos-debug.apk')
 
-IOS_APP_PATH = 'http://appium.github.io/appium/assets/TestApp7.1.app.zip' if os.getenv(
+IOS_APP_PATH = 'http://appiumdemo.github.io/appiumdemo/assets/TestApp7.1.app.zip' if os.getenv(
     'SAUCE_LABS') else os.path.abspath('../apps/TestApp.app.zip')
 
 if os.getenv('SAUCE_USERNAME') and os.getenv('SAUCE_ACCESS_KEY'):

@@ -12,7 +12,7 @@ print("hello world")
 
 
 class TestAndroidBasicInteractions():
-    PACKAGE = 'io.appium.android.apis'
+    PACKAGE = 'io.appiumdemo.android.apis'
     SEARCH_ACTIVITY = '.app.SearchInvoke'
     ALERT_DIALOG_ACTIVITY = '.app.AlertDialogSamples'
 
@@ -55,7 +55,7 @@ class TestAndroidBasicInteractions():
     def test_should_click_a_button_that_opens_an_alert_and_then_dismisses_it(self, driver):
         driver.start_activity(self.PACKAGE, self.ALERT_DIALOG_ACTIVITY)
 
-        open_dialog_button = driver.find_element_by_id('io.appium.android.apis:id/two_buttons')
+        open_dialog_button = driver.find_element_by_id('io.appiumdemo.android.apis:id/two_buttons')
         open_dialog_button.click()
 
         alert_element = driver.find_element_by_id('android:id/alertTitle')

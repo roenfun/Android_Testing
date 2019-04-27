@@ -27,7 +27,7 @@ class TestAndroidSelectors(unittest.TestCase):
         activity = self.driver.current_activity
         pkg = self.driver.current_package
 
-        self.assertEquals('io.appium.android.apis.ApiDemos', '{}{}'.format(pkg, activity))
+        self.assertEquals('io.appiumdemo.android.apis.ApiDemos', '{}{}'.format(pkg, activity))
         self.driver.quit()
 
         with self.assertRaises(InvalidSessionIdException) as excinfo:
