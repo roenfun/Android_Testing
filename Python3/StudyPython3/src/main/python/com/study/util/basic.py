@@ -3,6 +3,7 @@
 # @Time : 2019-04-12
 """
 基础语法使用，阅读python简明教程笔记
+https://bop.mol.uno/12.data_structures.html
 """
 # !/usr/local/bin/python3
 # !/Library/Frameworks/Python.framework/Versions/3.7/bin
@@ -86,16 +87,20 @@ tinyList = [123, 'runoob']  # 列表 array
 list1[0] = "改变数组元素值"
 list1[2:5] = [13, 14, 15]
 list1[2:3] = []  # 将对应的元素值设置为 []
-del list1[1]
-del c  # del语句删除单个或多个对象
+delimiter = '_*_'
+print("list1 with _*_", delimiter.join(["chad", "19", "Inter"]))
+# del list1[1]
+# del c  # del语句删除单个或多个对象
 
 print(type(a), type(miles), isinstance(name, str))  # 数据类型
 print(a + b)
 print(name, end=" ")  # 不换行输出
-print(name[0:-1])  # 输出第一个到倒数第二个的所有字符
+print("name[0:-1]", name[0:-1])  # 输出第一个到倒数第二个的所有字符
 print(name[0])  # 输出字符串第一个字符
 print(name[2:5])  # 输出从第三个开始到第五个的字符
 print(name[2:])  # 输出从第三个开始的后的所有字符
+# 你要记住如果你希望创建一份诸如序列等复杂对象的副本（而非整数这种简单的对象（Object）的引用），你必须使用切片操作来制作副本
+print("切片操作来制作副本， start to end is", name[:])
 print(name * 2)  # 输出字符串两次
 print(name + '你好')  # 连接字符串
 
@@ -109,7 +114,8 @@ print(list1 + tinyList)  # 连接列表
 '''
 元组与列表类似，不同之处在于元组的元素不能修改
 '''
-print('########-------------tuple元组-----------------#########')
+print('########-------------tuple元组 不可变长度-----------------#########')
+singleton = (2,)  # 包含 0 或 1 个项目的元组
 tuple1 = ("tuple1", "tuple2", 12345678)
 tuple2 = (90, 168.138)
 tuple3 = tuple1 + tuple2
@@ -128,18 +134,25 @@ print("tuple3 *2 is:", tuple3 * 2)
 # #print(dict1)
 """
 print('########-------------dictionary字典-----------------#########')
-dict1 = {"name": "Chad", "grad3": "pThree", "age": 30, "country": "China"}
+dict1 = {
+    "name": "Chad",
+    "grad3": "pThree",
+    "age": 30,
+    "country": "China"
+}
 dict1["name"] = "Roanldo"
 dict1['grad3'] = 'Seenior'
+dict1['gender'] = "Male"  # 添加键值
 print("字典的name is:", dict1["name"], ",字典的age is：", dict1.get('age'))
 print("字典的长度是：", len(dict1), "字典的字符串列表：", str(dict1))
 print("name 是否在字典里：", 'name' in dict1)
 # dict1.pop("age")
+# del dict1["country"]
 
 # 遍历字典
 print("########## 循环与条件 if var1: #########")
 for x in dict1.keys():
-    if "Age" in dict1:
+    if "Age" in dict1:  # 判断key
         print("value of country key is:", dict1.get(x))
     elif dict1.get(x) == 30:
         print("value age key is:", dict1.get(x))
@@ -148,6 +161,9 @@ for x in dict1.keys():
         print("条件语句都没命中:")
 
     print("key对应的值是：", x, ":", dict1.get(x))
+
+for name, age in dict1.items():
+    print("name is:{} and age is: {}".format(name, age))
 
 listLength = len(list1)
 print("list数组是：", list1)
@@ -167,10 +183,11 @@ print("########## 循环与条件 if var1: END ！！！！#########")
 '''
 集合（set）是一个无序的不重复元素序列
 注意：创建一个空集合必须用 set() 而不是 { }，因为 { } 
+通过使用集合，你可以测试某些对象的资格或情况，检查它们是否是其它集合的子集，找到两个集合的交集，等等
 '''
-print('########-------------set集合-----------------#########')
+print('########-------------set集合 不可重复元素-----------------#########')
 collection = {1, 2, 3, 4, 'apple', 'orange', 'apple', 'pear', 'orange', 'banana', 'tomato'}
-collection2 = set((1, 2, 3, "apple", "Runoob", "Taobao"))  # 最多只能有一个元素
+collection2 = set([1, 2, 3, "apple", "Runoob", "Taobao", 2, "apple"])  # 最多只能有一个元素
 print(collection)
 print(collection2)
 print("name 是否在集合里：", 'orange' in collection)
@@ -185,9 +202,9 @@ print(r'hello\nrunoob')  # 在字符串前面添加一个 r，表示原始字符
 
 # ##算术运算数值运算
 # 除法，得到一个浮点数; #除法，得到一个整数; #取余; #乘方
-print(2 / 4);
-print(2 // 4);
-print(13 % 2);
+print(2 / 4)
+print(2 // 4)
+print(13 % 2)
 print(2 ** 5)
 
 # 类定义 函数定义等等
