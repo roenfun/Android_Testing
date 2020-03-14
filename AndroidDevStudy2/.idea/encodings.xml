@@ -2,8 +2,11 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/animation/src/main/java/cn/itcast/animation/MainActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dataAsyncLoad/src/main/java/cn/itcast/adapter/ContactAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/datapageload/src/main/java/cn/itcast/pageload/MainActivity.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/db/src/main/java/cn/itcast/adapter/PersonAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/intent/src/main/java/cn/itcast/intent/IntentActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/junitest/src/main/java/cn/itcast/test/LogTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/mvpDemo/注意事项note.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/phonelistener/src/main/java/cn/itcast/phonelistener/BootBroadcastReceiver.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/phonelistener/src/main/java/cn/itcast/phonelistener/PhoneService.java" charset="GBK" />
@@ -11,6 +14,7 @@
     <file url="file://$PROJECT_DIR$/remoteService/src/main/java/cn/itcast/remote/service/StudentQueryService.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/sMSListener/src/main/java/cn/itcast/smslistener/SMSBroadcastReceiver.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/studentquery/src/main/java/cn/itcast/student/StudentService.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/tryEventBus_simple/src/main/java/com/example/tryeventbus_simple/MainActivity.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/视频与源码对应关系.txt" charset="GBK" />
   </component>
 </project>

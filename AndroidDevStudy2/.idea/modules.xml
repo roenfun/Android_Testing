@@ -3,10 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidDevStudy2.iml" filepath="$PROJECT_DIR$/AndroidDevStudy2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FragementDemo2/FragementDemo2.iml" filepath="$PROJECT_DIR$/FragementDemo2/FragementDemo2.iml" />
       <module fileurl="file://$PROJECT_DIR$/aapp/aapp.iml" filepath="$PROJECT_DIR$/aapp/aapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/activityLife/activityLife.iml" filepath="$PROJECT_DIR$/activityLife/activityLife.iml" />
       <module fileurl="file://$PROJECT_DIR$/animation/animation.iml" filepath="$PROJECT_DIR$/animation/animation.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/asynctaskdemo/asynctaskdemo.iml" filepath="$PROJECT_DIR$/asynctaskdemo/asynctaskdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/audioplayer/audioplayer.iml" filepath="$PROJECT_DIR$/audioplayer/audioplayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/codeUI/codeUI.iml" filepath="$PROJECT_DIR$/codeUI/codeUI.iml" />
       <module fileurl="file://$PROJECT_DIR$/contacts/contacts.iml" filepath="$PROJECT_DIR$/contacts/contacts.iml" />
@@ -15,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/db/db.iml" filepath="$PROJECT_DIR$/db/db.iml" />
       <module fileurl="file://$PROJECT_DIR$/dragScale/dragScale.iml" filepath="$PROJECT_DIR$/dragScale/dragScale.iml" />
       <module fileurl="file://$PROJECT_DIR$/drawable/drawable.iml" filepath="$PROJECT_DIR$/drawable/drawable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eventbuslatest/eventbuslatest.iml" filepath="$PROJECT_DIR$/eventbuslatest/eventbuslatest.iml" />
       <module fileurl="file://$PROJECT_DIR$/file/file.iml" filepath="$PROJECT_DIR$/file/file.iml" />
       <module fileurl="file://$PROJECT_DIR$/fragmentDemo/fragmentDemo.iml" filepath="$PROJECT_DIR$/fragmentDemo/fragmentDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/frameAnimation/frameAnimation.iml" filepath="$PROJECT_DIR$/frameAnimation/frameAnimation.iml" />
@@ -45,6 +48,7 @@
       <module fileurl="file://$PROJECT_DIR$/phone/phone.iml" filepath="$PROJECT_DIR$/phone/phone.iml" />
       <module fileurl="file://$PROJECT_DIR$/phonelistener/phonelistener.iml" filepath="$PROJECT_DIR$/phonelistener/phonelistener.iml" />
       <module fileurl="file://$PROJECT_DIR$/popupWindow/popupWindow.iml" filepath="$PROJECT_DIR$/popupWindow/popupWindow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recyclerview/recyclerview.iml" filepath="$PROJECT_DIR$/recyclerview/recyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/remoteService/remoteService.iml" filepath="$PROJECT_DIR$/remoteService/remoteService.iml" />
       <module fileurl="file://$PROJECT_DIR$/remoteServiceClient/remoteServiceClient.iml" filepath="$PROJECT_DIR$/remoteServiceClient/remoteServiceClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/sMSListener/sMSListener.iml" filepath="$PROJECT_DIR$/sMSListener/sMSListener.iml" />
@@ -57,6 +61,8 @@
       <module fileurl="file://$PROJECT_DIR$/style/style.iml" filepath="$PROJECT_DIR$/style/style.iml" />
       <module fileurl="file://$PROJECT_DIR$/tabhost/tabhost.iml" filepath="$PROJECT_DIR$/tabhost/tabhost.iml" />
       <module fileurl="file://$PROJECT_DIR$/takepicture/takepicture.iml" filepath="$PROJECT_DIR$/takepicture/takepicture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tryEventBus_latest/tryEventBus_latest.iml" filepath="$PROJECT_DIR$/tryEventBus_latest/tryEventBus_latest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tryEventBus_simple/tryEventBus_simple.iml" filepath="$PROJECT_DIR$/tryEventBus_simple/tryEventBus_simple.iml" />
       <module fileurl="file://$PROJECT_DIR$/tween/tween.iml" filepath="$PROJECT_DIR$/tween/tween.iml" />
       <module fileurl="file://$PROJECT_DIR$/videoRecorder/videoRecorder.iml" filepath="$PROJECT_DIR$/videoRecorder/videoRecorder.iml" />
       <module fileurl="file://$PROJECT_DIR$/videoUpload/videoUpload.iml" filepath="$PROJECT_DIR$/videoUpload/videoUpload.iml" />

@@ -3,12 +3,16 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="LOCAL" />
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT" />
+        </compositeConfiguration>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../../android_vip_all/vip-all/gradle/wrapper/gradle-2.14.1" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../android_vip_all/vip-all/gradle/wrapper/gradle-4.8" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/FragementDemo2" />
             <option value="$PROJECT_DIR$/aapp" />
             <option value="$PROJECT_DIR$/activityLife" />
             <option value="$PROJECT_DIR$/animation" />
@@ -63,6 +67,7 @@
             <option value="$PROJECT_DIR$/style" />
             <option value="$PROJECT_DIR$/tabhost" />
             <option value="$PROJECT_DIR$/takepicture" />
+            <option value="$PROJECT_DIR$/tryEventBus_simple" />
             <option value="$PROJECT_DIR$/tween" />
             <option value="$PROJECT_DIR$/videoRecorder" />
             <option value="$PROJECT_DIR$/videoUpload" />
@@ -71,7 +76,16 @@
             <option value="$PROJECT_DIR$/xml" />
           </set>
         </option>
-        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/tryEventBus_latest" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../android_vip_all/vip-all/gradle/wrapper/gradle-4.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/tryEventBus_latest" />
+          </set>
+        </option>
       </GradleProjectSettings>
     </option>
   </component>
