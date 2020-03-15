@@ -18,12 +18,14 @@ adb shell dumpsys activity | grep "mFocusedActivity"
 #adb shell am start -n 应用的主包名/要打开的activity所在的包.要打开的activity的名称
 adb shell am start -n com.suning.mobile.ebuy/com.suning.mobile.ebuy.search.ui.NewSearchResultActivity
 
-#点击函数
+echo "----------简单的点击事件-----------"
+#根据按钮名称, 点击函数
 click(){
 local index=1
 [ -n "$2" ] && index=$2
 adb shell input tap \
 $(
+#获取当前界面的所有内容
 adb shell "uiautomator dump --compressed && cat /sdcard/window_dump.xml" \
 | sed 's#<node#^<node>#g' \
 | awk 'BEGIN{RS="^"}{print $0}' \
@@ -32,6 +34,10 @@ adb shell "uiautomator dump --compressed && cat /sdcard/window_dump.xml" \
 | awk 'BEGIN{FS=",|\\[|\\]"}{print ($2+$5)/2,($3+$6)/2}' 
 )
 }
+
+for name in 我的 订单  首页 ;do click $name;done
+echo "---------简单的点击事件 End-----------"
+
 
 #输入文本函数
 input(){
@@ -56,5 +62,6 @@ for i in $(seq 20);do click '5588';sleep 2; adb shell input keyevent 4; sleep 2;
 adb shell dumpsys meminfo com.suning.mobile.ebuy | grep "Dalvik Heap" | awk '{print $4}';sleep 1;done \
 | gnuplot -e "set title 'memory curve'; set ylabel 'Mem(Kb)';set xlabel 'times'; set terminal dumb;plot '<cat' using 1 with line title 'memory'"
 
+adb shell input tap $(adb shell "uiautomator dump --compress  && cat /sdcard/window_dump.xml" | sed 's/<node/^<node>/g' | awk 'BEGIN{RS="^"}{print $0}' | grep '往内容提供者添加数' | awk 'BEGIN{FS=",|\\[|\\]"}{print ($2+($5-$2)/2),($3+($6-$3)/2)}')
 
 
