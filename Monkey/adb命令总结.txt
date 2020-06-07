@@ -1,3 +1,0 @@
-adb wait-for-device          - block until device is online
-给模拟器发短信和打电话：
-telnet localhost 5554
